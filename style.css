@@ -1,0 +1,991 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: carnaval;
+    src: url(./yazi.ttf);
+}
+body{
+    background-color: rgb(0, 0, 0);
+    
+}
+.conteiner{
+    width: 95%;
+   margin: auto;
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border: 1px solid rgb(102, 102, 102);
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 1px 1px rgb(48, 48, 48);
+    background-color: rgb(48, 48, 48);
+    font-family: carnaval;
+    
+}
+.sayfalar a{
+    text-decoration: none;
+    margin: 20px;
+    color: rgb(173, 173, 173);
+    font-size: 20px;
+}
+.sayfalar a:hover{
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    color: white;
+}
+.kısım1{
+    height: 600px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+
+}
+.merkezsite a{
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    font-size: 35px; 
+    margin-left: 200px;
+}
+.motormerkez{
+    position: absolute; 
+    width: 500px;
+    top: 200px; 
+    margin-left: 50px; 
+    opacity: 90%;
+    transition: all 1s ease-in ;
+}
+.motormerkez:hover{
+    transform: scale(1.2);
+}
+.etiketp{
+    width: 1300px;
+    height: 100px;
+    transition: all 1s ease-in ;
+}
+.etiketp:hover{
+    transform: scale(1.05 );
+}
+.logomerkez{
+    position: absolute; 
+    margin-top: 250px; 
+    margin-left: 530px; 
+    opacity: 100%;
+    transition: all 1s ease-in ;
+}
+.logomerkez:hover{
+    transform: scale(1.4);
+}
+.oyuncular{
+    transition: all 1s ease-in ;
+}
+.oyuncular:hover{
+    transform: scale(1.12);
+}
+
+.merkezsite{
+    
+    text-decoration: none;
+    color: rgb(203, 203, 203);
+    transition: all 1s ease-in-out ;
+
+}
+.baglantılar a{
+    font-family: carnaval;
+}
+.merkezsite a:hover{
+    color: white;
+    border-bottom:2px solid white ;
+    border-top: 2px solid white;
+}
+.sezonlar h1{
+    font-family: carnaval;
+}
+.card{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+    transition: all 1s ease-in ;
+
+}
+.card:hover{
+    transform: scale(1.4);
+
+    
+}
+.card img{
+    width:100%;
+}
+.kısım2{
+    width: 100%;
+    height: 900px;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-image: url(./525487.jpg);
+    background-repeat: no-repeat;
+
+    
+}
+.oyuncular{
+    width: 350px; 
+    height: 200px; 
+    z-index: 3; 
+    position: absolute;  
+    gap: 1px; 
+    color: white; 
+    margin-top: 240px; 
+    margin-left: 1000px; 
+    font-size: 20px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+.footer{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+.footer img{
+    margin-top: 20px;
+}
+.footer a{
+    color:  rgb(173, 173, 173);
+    text-decoration: none;
+}
+.baglantılar a:hover{
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    color: white;
+}
+.footer i{
+    color:  rgb(173, 173, 173);
+}
+.baglantılar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 20px;
+    font-size: 20px;
+    
+}
+.sosyalmedya{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 30px;
+    font-size: 45px;
+}
+.metin1{
+    width: 600px; 
+    height: 100px; 
+    color: rgb(255, 255, 255); 
+    font-size: 20px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+    color: white;
+}
+.metin2{
+    position: absolute;
+    top: 660px;
+    left: 50px;
+    font-size: 20px;
+    color: white;
+}
+.önresim{
+    gap: 40px;
+}
+.ilkres{
+    width: 660px; 
+    height: 390px;
+}
+.sezonlar{
+    border-top: 1px solid rgb(203, 203, 203);
+    border-bottom: 1px solid rgb(203, 203, 203);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 600px;
+}
+.degisken1{
+    width: 670px; 
+    height: 390px;
+    animation-name: res1;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    animation-direction: alternate;
+}
+.degisken2{
+    width: 670px; 
+    height: 390px;
+    animation-name: res2;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    animation-direction: alternate;
+    
+}
+.degisken3{
+    width: 670px; 
+    height: 390px;
+    animation-name: res3;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    animation-direction: alternate;
+}
+@keyframes res1{
+    0%{opacity: 0%;}
+    33%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+@keyframes res2{
+    0%{opacity: 0%;}
+    33%{opacity: 100%;}
+    100%{opacity: 0%;}
+}
+@keyframes res3{
+    0%{opacity: 100%;}
+    33%{opacity: 0%;}
+    100%{opacity: 0%;}
+}
+.animemotor{
+    position: relative;
+    background-image: url(./ritimm.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 70%;
+    overflow: hidden;
+
+    
+}
+.animasyonmotor{
+    
+    position: absolute;
+    animation-name: motorr;
+    animation-duration: 7s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    
+    
+}
+@keyframes motorr{
+    0% {left: 0px;top: 0px;}
+    
+    100% {left: 100%;top: 0px;}
+}
+
+
+.galerison{
+    display: flex;
+    height: 40rem;
+    gap: 1rem;
+    margin-top: 20px;
+}
+.karakter1{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    box-shadow:1px 1px rgb(138, 157, 163);
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 1);
+    position: relative;
+   
+}
+.karakter1:hover{
+    flex: 7;
+}
+.galerison2{
+    display: flex;
+    height: 40rem;
+    gap: 1rem;
+    margin-top: 20px;
+}
+.karakter2{
+    flex: 1;
+    box-shadow:1px 1px rgb(138, 157, 163);
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 1);
+   
+}
+.karakter2:hover{
+    flex: 7;
+}
+.ffrr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 25px;
+    background-image: url(./Ekran\ Resmi\ 2023-11-09\ 20.21.46.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%; 
+    height: 700px; 
+    border-radius: 10px;
+    gap: 200px;
+    
+    
+}
+
+.kimlik2{
+    position: absolute;
+    inset: 3px;
+    background-image: url(./Ekran\ Resmi\ 2023-11-09\ 18.18.39.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    z-index: 2;
+
+
+}
+.cetecard{
+    right: 150px;
+    width: 400px;
+    height: 500px;
+    padding: 30px 40px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(5px);
+  border-radius: 20px;
+
+}
+/* .kimlik::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 600px;
+    height: 350px;
+    background: linear-gradient(0deg,transparent,transparent,#ffffff,#ffffff,#ffffff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 10s linear infinite;
+}
+.kimlik::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 600px;
+    height: 350px;
+    background: linear-gradient(0deg,transparent,transparent,#ffffff,#ffffff,#ffffff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 10s linear infinite;
+    animation-delay: -6s;
+}
+@keyframes animate{
+    0%{ transform: rotate(0deg);}
+    100%{ transform: rotate(360deg);}
+} */
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    margin: 20px 0;
+    
+}
+.input-box i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border:2px solid rgba(255, 255, 255, .2) ;
+    border-radius: 20px;
+    padding: 20px 30px;
+    font-size: 15px;
+    color: white;
+    
+
+}
+.input-box input::placeholder{
+    color: #fff;
+
+}
+.btnn{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    
+}
+.geriyedonus{
+    margin: 30px 0px;
+}
+
+.cetecard h1{
+    text-align: center;
+    font-size: 30px;
+    
+}
+.kapsayıcı{
+    width: 600px;
+    height: 350px;
+    
+}
+.onyuz , .arkayuz{
+    width: inherit;
+    height: inherit;
+    border: inherit;
+    position: absolute;
+    backface-visibility: hidden;
+    color: white;
+    transition: 1s all;
+    z-index: 3;
+}
+.card-r{
+    display: none;
+}
+.onyuz{
+    background-image: url(./Ekran\ Resmi\ 2023-11-09\ 18.18.39.png);
+    background-size: 100% 100%;
+    border-radius: 20px;
+    border: 1px solid lightgray;  
+     
+    
+
+}
+.arkayuz{
+    transform: rotateY(180deg);
+    background-image: url(./345369.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    position: relative;
+    
+}
+.card-r:checked ~ .kapsayıcı .onyuz{
+    transform: rotateY(180deg);
+    
+}
+.card-r:checked ~ .kapsayıcı .arkayuz{
+    transform: rotateY(0deg);
+}
+.card-yazı1{
+    position: absolute;
+    font-size: 26px;
+    right: 20px;
+    font-family: carnaval;
+    color: black;
+    left: 20px;
+    top: 10px;
+}
+.card-yazı2{
+    position: absolute;
+    font-size: 26px;
+    right: 20px;
+    font-family: carnaval;
+    bottom: 10px;
+    color: rgb(0, 0, 0);
+
+}
+.card-logo{
+    width: 110px;
+    height: 110px;
+    right: 80px;
+    top: 15px;
+    position: absolute;
+    opacity: 80%;
+}
+
+
+
+
+
+@media (max-width: 1250px){
+    .degisken1{
+        width: 550px;
+    }
+    .degisken2{
+        width: 550px;
+    }
+    .degisken3{
+        width: 550px;
+    }
+    .ilkres{
+        width: 550px;
+
+    }
+    .kısım1{
+        grid-template-columns: repeat(3,1fr);
+        height: 855px;
+    }
+    .oyuncular{
+        margin-left: 730px; 
+    }
+    .logomerkez{
+        margin-left: 320px;
+
+    }
+    .motormerkez{
+        margin-left: 0px;
+        width: 400px;
+
+    }
+    .etiketp{
+        width: 1040px;
+        height: 140px;
+       
+    }
+    .ffrr{
+        gap: 100px;
+    }
+
+}
+@media (max-width: 1150px){
+    .merkezsite a{
+       /* font-size: 20px; */
+       margin: auto;
+    }
+    .karakter1 h4{
+        font-size: 13px;
+    }
+    .degisken1{
+        width: 450px;
+    }
+    .degisken2{
+        width: 450px;
+    }
+    .degisken3{
+        width: 450px;
+    }
+    .ilkres{
+        width: 450px;
+
+    }
+    .oyuncular{
+        margin-left: 570px; 
+    }
+    .logomerkez{
+        margin-left: 250px;
+
+    }
+    .motormerkez{
+        margin-left: 0px;
+        width: 400px;
+
+    }
+    .etiketp{
+        width: 870px;
+        height: 140px;
+       
+    }
+    .ffrr{
+        gap: 0px;
+    }
+    
+}
+@media (max-width: 985px){
+    .baglantılar{
+        gap: 10px;
+        font-size: 20px;
+    }
+    .karakter1 h4{
+        font-size: 11px;
+    }
+    .sosyalmedya{
+        gap: 15px;
+        font-size: 30px;
+    }
+    .altlogo{
+        display: none;
+    }
+    .degisken1{
+        width: 400px;
+    }
+    .degisken2{
+        width: 400px;
+    }
+    .degisken3{
+        width: 400px;
+    }
+    .ilkres{
+        width: 400px;
+
+    }
+    .kısım1{
+        grid-template-columns: repeat(2,1fr);
+        height: 1000px;
+    }
+    .oyuncular{
+        margin-left: 400px; 
+    }
+    .logomerkez{
+        margin-left: 40px;
+
+    }
+    .motormerkez{
+        display: none;
+
+    }
+    .etiketp{
+        width: 680px;
+        height: 140px;
+        
+       
+    }
+    .metin2{
+        top: 600px;
+    }
+    .ffrr{
+        height: 900px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}
+@media (max-width: 925px){
+    .logonavbar{
+        display: none;
+    }
+    .degisken1{
+        width: 350px;
+    }
+    .degisken2{
+        width: 350px;
+    }
+    .degisken3{
+        width: 350px;
+    }
+    .ilkres{
+        width: 350px;
+
+    }
+    .önresim{
+        gap: 20px;
+    }
+    .galerison{
+        
+        height: 35rem;
+        
+    }
+    
+}
+@media (max-width: 800px){
+    .merkezsite a{
+       font-size: 30px;
+    }
+    .sayfalar a{
+       margin: 10px;
+    }
+    .karakter1 h4{
+        font-size: 10px;
+    }
+    .degisken1{
+        width: 270px;
+        height: 250px;
+    }
+    .degisken2{
+        width: 270px;
+        height: 250px;
+    }
+    .degisken3{
+        width: 270px;
+        height: 250px;
+    }
+    .ilkres{
+        width: 270px;
+        height: 250px;
+
+    }
+    .önresim{
+        gap: 20px;
+    }
+    .oyuncular{
+        display: none;
+    }
+    .logomerkez{
+        margin-left: 140px;
+
+    }
+    .motormerkez{
+        display: none;
+
+    }
+    .etiketp{
+        width: 530px;
+        height: 140px;
+        
+        
+       
+    }
+    .metin1{
+        width: 540px;
+        height: 50px;
+        font-size: 20px;
+        
+    }
+    .metin2{
+        top: 530px;
+    }
+    .galerison{
+        
+        height: 27rem;
+        
+    }
+    
+}
+@media (max-width: 690px){
+    .merkezsite a{
+        font-size: 20px;
+     }
+    .sayfalar a{
+        font-size: 15px;
+        margin: 5px;
+    }
+    .baglantılar{
+        gap: 10px;
+        font-size: 12px;
+        
+    }
+    .karakter1 h4{
+        font-size: 7px;
+    }
+    .galerison{
+        
+        height: 22rem;
+        
+    }
+    
+    
+}
+@media (max-width: 690px){
+    .degisken1{
+        width: 230px;
+        height: 190px;
+    }
+    .degisken2{
+        width: 230px;
+        height: 190px;
+    }
+    .degisken3{
+        width: 230px;
+        height: 190px;
+    }
+    .ilkres{
+        width: 230px;
+        height: 190px;
+
+    }
+    .önresim{
+        gap: 10px;
+    }
+}
+@media (max-width: 640px){
+    .kısım1{
+        grid-template-columns: repeat(1,1fr);
+        height: 1750px;
+    }
+    .oyuncular{
+        display: none;
+    }
+    .logomerkez{
+        margin-left: 60px;
+
+    }
+    .motormerkez{
+        display: none;
+
+    }
+    .etiketp{
+        width: 380px;
+        height: 200px;
+        
+        
+       
+    }
+    .metin1{
+        width: 380px;
+        height: 90px;
+        font-size: 16px;
+        
+    }
+    .metin2{
+        top: 530px;
+        font-size: 16px;
+    }
+    .galerison2{
+        
+        height: 30rem;
+        
+    }
+    .ffrr{
+        height: 660px;
+        gap: 15px;
+    }
+    .kapsayıcı{
+        width: 350px;
+        height: 200px;
+    }
+    .cetecard{
+        width: 350px;
+        height: 420px;
+    }
+    .card-yazı1{
+        position: absolute;
+        font-size: 16px;
+        right: 20px;
+        font-family: carnaval;
+        color: black;
+        left: 20px;
+        top: 10px;
+    }
+    .card-yazı2{
+        position: absolute;
+        font-size: 16px;
+        right: 20px;
+        font-family: carnaval;
+        bottom: 10px;
+        color: rgb(0, 0, 0);
+    
+    }
+    .card-logo{
+        width: 65px;
+        height: 65px;
+        right: 50px;
+        top: 15px;
+        position: absolute;
+        opacity: 80%;
+    }
+    
+}
+@media (max-width: 500px){
+    .merkezsite a{
+        font-size: 15px;
+     }
+    .sayfalar a{
+        font-size: 15px;
+        margin: 2px;
+    }
+    .oyuncular{
+        display: none;
+    }
+    .logomerkez{
+        margin-left: 30px;
+
+    }
+    .motormerkez{
+        display: none;
+
+    }
+    .etiketp{
+        width: 380px;
+        height: 200px;
+        
+        
+       
+    }
+    .metin1{
+        margin-left: 30px;
+        width: 380px;
+        height: 90px;
+        font-size: 16px;
+        
+    }
+    .metin2{
+        left: 20px;
+        top: 530px;
+        font-size: 16px;
+    }
+    .galerison{
+        
+        height: 17rem;
+        
+    }
+    .galerison2{
+        
+        height: 22rem;
+        
+    }
+}
+@media (max-width: 440px){
+    
+    .sosyalmedya{
+        gap: 10px;
+        font-size: 20px;
+        flex-direction: column;
+    }
+    .degisken1{
+        width: 200px;
+        height: 150px;
+    }
+    .degisken2{
+        width: 200px;
+        height: 150px;
+    }
+    .degisken3{
+        width: 200px;
+        height: 150px;
+    }
+    .ilkres{
+        width: 200px;
+        height: 150px;
+
+    }
+    .önresim{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .galerison{
+        
+        height: 13rem;
+        
+    }
+    .galerison2{
+        
+        height: 16rem;
+        
+    }
+    .metin1{
+        margin-left: 20px;
+        width: 300px;
+        height: 90px;
+        font-size: 16px;
+        
+    }
+    .metin2{
+        left: 20px;
+        top: 500px;
+        font-size: 15px;
+        width: 300px;
+        height: 300px;
+    }
+    .logomerkez{
+        margin-left: 15px;
+
+    }
+    .sayfalar a{
+        font-size: 11px;
+        margin: 2px;
+    }
+}
